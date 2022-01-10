@@ -7,11 +7,13 @@ import { Integrations } from "@sentry/tracing";
 import { AuthProvider } from "./config";
 import { App } from "./App";
 
-Sentry.init({
-  dsn: "https://b1a4703aa6db4d29a5557fdf1583f9b8@o1112338.ingest.sentry.io/6141869",
-  integrations: [new Integrations.BrowserTracing()],
-  tracesSampleRate: 1.0,
-});
+process.env.REACT_APP_ENVIRONMENT === "production" &&
+  Sentry.init({
+    dsn: "https://b1a4703aa6db4d29a5557fdf1583f9b8@o1112338.ingest.sentry.io/6141869",
+    integrations: [new Integrations.BrowserTracing()],
+    tracesSampleRate: 1.0,
+  });
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
