@@ -1,0 +1,29 @@
+.navBarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 5em;
+}
+
+.navBarContainer p {
+  font-size: x-large;
+}
+.navBarContainer .titleButton {
+  text-decoration: none;
+}
+.navBarContainer .titleButton:visited {
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: #303f9f;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1em;
+}
+.navBarContainer .titleButton:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: #303f9f;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1em;
+}

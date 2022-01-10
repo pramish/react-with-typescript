@@ -1,0 +1,74 @@
+{
+  "name": "helpwithresume__web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@auth0/auth0-react": "^1.6.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-helmet": "^6.1.2",
+    "@types/react-paginate": "^7.1.1",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/styled-components": "^5.1.13",
+    "axios": "^0.21.4",
+    "chart.js": "^3.6.0",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^3.3.0",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-paginate": "^7.1.5",
+    "react-router-dom": "^5.2.1",
+    "react-scripts": "4.0.3",
+    "react-table": "^7.7.0",
+    "styled-components": "^5.3.1",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "docker-build-development": "docker-compose -f docker-compose.dev.yml build",
+    "docker-run-development": "docker-compose -f docker-compose.dev.yml up",
+    "docker-build-production": "docker-compose -f docker-compose.prod.yml build",
+    "docker-run-production": "docker run -p 80:80 --name react-app get-help-with-resume__client__production",
+    "docker-stop-development": "docker-compose -f docker-compose.dev.yml down",
+    "docker-stop-production": "docker-compose -f docker-compose.prod.yml down"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: react_typescript_boilerplate__production
+    image: react_typescript_boilerplate__production
+    build:
+      context: .
+      target: production

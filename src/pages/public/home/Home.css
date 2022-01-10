@@ -1,0 +1,43 @@
+.homeContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 9em;
+}
+
+.textButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 13em;
+}
+.textButtonContainer .textTitle {
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 2em;
+}
+.textButtonContainer .textSubtitle {
+  color: gray;
+}
+.textButtonContainer .button {
+  padding: 1em;
+  width: 20em;
+  margin-top: 2em;
+  background-color: #14227d;
+  color: white;
+}
+.textButtonContainer .button:hover {
+  padding: 1em;
+  width: 20em;
+  margin-top: 2em;
+  background-color: transparent;
+  color: black;
+}
+
+.imageContainer {
+  margin-right: 10em;
+}
+.imageContainer .homeImage {
+  max-width: 100%;
+  height: auto;
+}
