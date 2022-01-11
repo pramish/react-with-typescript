@@ -1,4 +1,4 @@
-import { Footer } from "../../../components/footer";
+import { Footer } from "../../../components/common/footer";
 import { SEO } from "../../../seo";
 
 import "./dashboard.css";

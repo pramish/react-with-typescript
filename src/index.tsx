@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import ReactDOM from "react-dom";
 import * as Sentry from "@sentry/react";
 import { Integrations } from "@sentry/tracing";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 import { AuthProvider } from "./config";
 import { App } from "./App";
@@ -14,12 +15,16 @@ process.env.REACT_APP_ENVIRONMENT === "production" &&
     tracesSampleRate: 1.0,
   });
 
+const queryClient = new QueryClient();
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <AuthProvider>
-        <App />
-      </AuthProvider>
+      <QueryClientProvider client={queryClient}>
+        <AuthProvider>
+          <App />
+        </AuthProvider>
+      </QueryClientProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById("root"),

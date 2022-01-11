@@ -1,8 +1,9 @@
 import { Button } from "@material-ui/core";
 
-import { Layout } from "../../../components/layout";
+import { Layout } from "../../../components/common/layout";
 
 import HomePageImage from "./images/helpwithresume.png";
+
 import "./Home.css";
 
 const title = " Home";

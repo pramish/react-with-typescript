@@ -1,1 +1,0 @@
-export { GetRequest } from "./GetRequest";
