@@ -1,0 +1,1 @@
+export { useMutateCreatePosts } from "./useMutateCreatePosts";
